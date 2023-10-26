@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   console.log(currPage);
  
-  const navItemStyle="nav-item nav-link px-lg-3 px-xl-5";
+ 
   
   return (
     <header className="navigation-header">
