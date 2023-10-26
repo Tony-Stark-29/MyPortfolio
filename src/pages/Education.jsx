@@ -6,7 +6,7 @@ export const Education = () => {
 
       <div className="row">
       <div className="col-lg-6 container-left">
-           <h3 className="display-6">Education</h3>
+           <h3 className="display-6">Education Updated</h3>
       </div>
       <div className="col-lg-6 container-right">
       <h3 className="display-6">My Skills</h3>
