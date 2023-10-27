@@ -1,25 +1,22 @@
-:root
-{
-  --white:#fff;
-  --Black:#000000;
-  --Phthalo-Green:#0c2e23;
-  --Bottle-Green:#18624c;
-  --Viridian:#2e8669;
-  --PaleRobinEggBlue:#9fd7c4;
-
+:root {
+  --white: #fff;
+  --Black: #000000;
+  --Phthalo-Green: #0c2e23;
+  --Bottle-Green: #18624c;
+  --Viridian: #2e8669;
+  --PaleRobinEggBlue: #9fd7c4;
 }
 
-*
-{
+* {
   box-sizing: border-box;
 }
 
 .App {
   text-align: center;
-   display: grid;
+  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(10vh,auto) minmax(90vh,auto); 
-  font-family: 'Nunito', sans-serif;
+  grid-template-rows: minmax(10vh, auto) minmax(90vh, auto);
+  font-family: "Nunito", sans-serif;
   background: url("./resources/background//man-vector.png") center/cover fixed;
   scroll-behavior: smooth;
 }
@@ -59,90 +56,67 @@
   }
 }
 
-
 /* My Css */
 
-
-.navigation-header
-{
-  font-family: 'Jura', sans-serif;
+.navigation-header {
+  font-family: "Jura", sans-serif;
   font-weight: 900;
   display: grid;
   align-items: center;
   color: var(--Phthalo-Green);
   padding: 0 1rem;
-  
 }
 
-.navigation-header hr
-
-{
+.navigation-header hr {
   position: absolute;
-  top:6vh;
+  top: 6vh;
   right: 2vw;
   width: 45vw;
   background-color: var(--Black);
   box-shadow: 0px 2px 1px 1px var(--Black);
 }
- 
 
-#mynav > *:hover
-{
-
+.my-nav-link:hover {
   color: white;
   transform: scale(1.2);
   transition: 200ms ease-out;
   color: var(--white);
- 
 }
- 
 
-.logo{
-  font-family: 'Orbitron', sans-serif;
+.logo {
+  font-family: "Orbitron", sans-serif;
   font-weight: 900;
   font-size: 2rem;
   letter-spacing: 0.2em;
-
 }
 
-.container-home
-  {
-     
-    height: 100%;
- 
-  }
+.container-home {
+  height: 100%;
+}
 
- 
-.overlay-left
-{
+.overlay-left {
   height: 100vh;
-   
+
   width: 50vw;
   position: absolute;
   z-index: 0;
-  top:0;
+  top: 0;
   left: 0;
   background-color: #00000083;
-  
+
   box-sizing: border-box;
-   
 }
 
-.container-left
-{
+.container-left {
   position: relative;
-  
 }
 
-.container-left h2
-{
+.container-left h2 {
   color: var(--PaleRobinEggBlue);
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   letter-spacing: 0.3em;
- 
 }
-.container-right p 
-{
+.container-right p {
   color: var(--white);
   display: flex;
   justify-content: center;
@@ -150,50 +124,38 @@
   letter-spacing: 0.2em;
   line-height: 3em;
   text-align: justify;
-
 }
 
-.container-left h6
-{
+.container-left h6 {
   letter-spacing: 0.5em;
   word-spacing: 1em;
   color: var(--white);
 }
 
-.container-left .link-img-container >img
-{
+.container-left .link-img-container > img {
   margin: 1em;
   width: 50px;
-  height:50px;
+  height: 50px;
   background-color: var(--Viridian);
   border-radius: 50px;
   box-sizing: content-box;
   image-rendering: optimizeSpeed;
   padding: 5px;
- 
-
 }
 
-.container-left .link-img-container >img:active
-{
-    background-color:  var(--PaleRobinEggBlue);
+.container-left .link-img-container > img:active {
+  background-color: var(--PaleRobinEggBlue);
 }
 
- @media screen and (max-width:960px) {
+@media screen and (max-width: 960px) {
+  .navigation-header hr {
+    display: none;
+  }
 
-
-  .navigation-header hr
-{
-  display: none;
-
-}
-
-.container-home .container-left h2
-{
-  font-size: 3rem;
-}
-  .navigation-header
-  {
+  .container-home .container-left h2 {
+    font-size: 3rem;
+  }
+  .navigation-header {
     position: sticky;
     top: 0;
     z-index: 100;
@@ -201,36 +163,35 @@
     background-color: var(--Phthalo-Green);
   }
 
-  #mynav > *
-  { 
-
-      padding: 0 1rem 0 1rem;
-
+  #navbarSupportedContent {
+    padding: 1rem;
+    position: relative;
+    z-index: 200;
   }
-  .overlay-left
-  {
-     
+
+  
+
+  .my-nav-link {
+    padding: 0 1rem 0 1rem;
+  }
+  .overlay-left {
     width: 100vw;
     height: 60vh;
     transition: display 500ms ease-in;
   }
 
-  .container-left
-  {
+  .container-left {
     min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
- 
-  .container-right
-  {
+
+  .container-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
-  
- }
+}
