@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   const {currPage,setPage}=useContext(NavigationContext);
 
-  const [navBarCollapse,setCollapse]=useState(true);
+  const [navBarCollapse,setCollapse]=useState(false);
 
   console.log(currPage);
  
@@ -21,7 +21,7 @@ export const Navbar = () => {
         <button className="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={()=>{setCollapse(!navBarCollapse)}}>
     <span className="navbar-toggler-icon"></span>
   </button>
-        <div className={navBarCollapse===false?"collapse navbar-collapse justify-content-end":"navbar-collapse justify-content-end"}  >
+        <div className={navBarCollapse?"navbar-collapse justify-content-end":"collapse navbar-collapse justify-content-end"}  >
              <Link to='/' className="nav-item nav-link px-lg-3 px-xl-5 my-nav-link" onClick={()=>{setPage("Home")}}>Home</Link>
              <Link to='/Education' className="nav-item nav-link px-lg-3 px-xl-5 my-nav-link"  onClick={()=>{setPage("Education")}}>Education</Link>
              <Link to='/MyWork' className="nav-item nav-link px-lg-3 px-xl-5 my-nav-link"  onClick={()=>{setPage("MyWork")}}>My Work</Link>
