@@ -2,12 +2,15 @@ import React from "react";
 
 import SMVEC_LOGO from "../resources/logo/SMVEC.gif";
 import PUCC_LOGO from "../resources/logo/PUCC.jpeg";
+import { GoBackBtn } from "../components/GoBackBtn";
 
 export const Education = () => {
   return (
-    <div className="home-container container">
-      <div className="row  ">
-        <div className="col-lg-6 container-left education-container">
+    <div className="container-fluid container-education text-light ">
+      <GoBackBtn></GoBackBtn>
+      
+        <div className="row justify-content-center container-left education-container">
+          <h3>My Education Track</h3>
           <div className="education  m-3">
             <div className="education-title ">
               <img src={SMVEC_LOGO} alt="SMVEC" />
@@ -47,8 +50,11 @@ export const Education = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 container-right"></div>
-      </div>
+        <div className="row justify-content-center container-right">
+          <h2>My Skills</h2>
+          
+        </div>
+     
     </div>
   );
 };
