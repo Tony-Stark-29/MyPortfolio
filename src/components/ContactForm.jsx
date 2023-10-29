@@ -2,13 +2,14 @@ import React from "react";
 import linkedIn_logo from "../resources/icons/linked_in.svg";
 import gitHub_logo from "../resources/icons/github.svg";
 import resume_logo from "../resources/icons/user_circle_male_avatar.svg";
+import home from "../css/Home.module.css";
 
 export const ContactForm = () => {
   return (
     <>
     <div className="overlay"></div>
     <div className="contact-me-form-container row col-sm-12  col-md-12 col-lg-8">
-      <div className="col-lg-6 col-sm-12 container-left p-1">
+      <div className={`col-lg-6 col-sm-12 container-left p-1 ${home.link_img_container}`}>
         <img src={linkedIn_logo} alt="Github" className="link-img-container " />
         <img
           src={gitHub_logo}

@@ -24,14 +24,14 @@
   width: 100vh;
 }
 
-.link_img_container > img {
+.link_img_container  img {
   margin: 1rem;
   width: 50px;
   height: 50px;
   border-radius: 25px;
 }
 
-.link_img_container > img:hover {
+.link_img_container  img:hover {
   transition: transform 300ms ease-out;
   transform: scale(1.2);
 }
@@ -58,10 +58,16 @@
 }
 
 @media screen and (max-width: 992px) {
+
+  .container
+  {
+    grid-template-rows: minmax(10vh,auto) auto;
+  }
   .content {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    gap: 2rem;
   }
   .overlay_left {
     display: none;

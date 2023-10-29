@@ -4,15 +4,19 @@ import SMVEC_LOGO from "../resources/logo/SMVEC.gif";
 import PUCC_LOGO from "../resources/logo/PUCC.jpeg";
 import { GoBackBtn } from "../components/GoBackBtn";
 
+import education from "../css/Education.module.css";
+
 export const Education = () => {
   return (
-    <div className="container-fluid container-education text-light ">
+    <div className={`container ${education.container} text-light`}>
       <GoBackBtn></GoBackBtn>
       
-        <div className="row justify-content-center container-left education-container">
-          <h3>My Education Track</h3>
-          <div className="education  m-3">
-            <div className="education-title ">
+      <h2>Education</h2>
+        <div className={`row m-2 justify-content-center ${education.education_container}`}>
+ 
+          <div className={`${education.education} col-lg-6 col-sm-12 m-3`}>
+            <div className={education.education_tag}>M <br />C <br />A</div>
+            <div className={education.education_title}>
               <img src={SMVEC_LOGO} alt="SMVEC" />
               <h6>Sri Manakula Vinayagar Engineering College</h6>
             </div>
@@ -30,8 +34,9 @@ export const Education = () => {
               </div>
             </div>
           </div>
-          <div className="education  m-3">
-            <div className="education-title ">
+          <div className={`${education.education} col-lg-6  m-3`}>
+          <div className={education.education_tag}>B <br />C <br /> A</div>
+            <div className={education.education_title}>
               <img src={PUCC_LOGO} alt="SMVEC" />
               <h6>Pondicherry University Community College</h6>
             </div>
