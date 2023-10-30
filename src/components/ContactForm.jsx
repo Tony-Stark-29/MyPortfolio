@@ -30,12 +30,12 @@ export const ContactForm = () => {
    <>
  
    <div className={contact.overlay}></div>
-    <div className={`${contact.contact_container} row  col-sm-12  col-lg-8`}>
-      <div className={`col-lg-6 col-sm-12 ${contact.container_left}   ${home.link_img_container}`}>
+    <div className={`${contact.contact_container}  row  col-sm-12  col-lg-8`}>
+      <div className={`col-lg-6 col-sm-12 ${contact.container_left}  ${home.link_img_container}`}>
          <ContactLinks></ContactLinks>
       </div>
       <div className={`col-lg-6 col-sm-12 ${contact.container_right}`}>
-        
+      <i className={`fa-solid fa-xmark ${contact.close}`} style={{color: "#ffffff"}}></i>
         <form className="form-input-group p-4" ref={contactForm} onSubmit={emailMe}>
         <h3 className="text-light">Write to me</h3>
           <input
