@@ -1,10 +1,13 @@
-import React from "react";
+import React  from "react";
 import home from "../css/Home.module.css";
 import { Navbar } from "../components/Navbar";
 import { ContactLinks } from "../components/ContactLinks";
+import { ContactForm } from "../components/ContactForm";
+import { FormPopUpContext } from "../context/FormPopUpContext";
+import { useContext } from "react";
 
  export const Home = () => {
- 
+  const {showContactForm }=useContext(FormPopUpContext);
   return (
     < div className={home.container}>
       <Navbar></Navbar>
@@ -35,7 +38,7 @@ import { ContactLinks } from "../components/ContactLinks";
             </p>
           </div>
       </div>
-        
+      {showContactForm && <ContactForm></ContactForm>}
     </div>
   );
 };

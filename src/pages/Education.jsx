@@ -72,6 +72,10 @@ export const Education = () => {
  
         <div className="row justify-content-center container-right">
           <h2>My Skills</h2>
+
+          <div className="skill">
+            
+          </div>
         </div>
       </div>
     </>
