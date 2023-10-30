@@ -1,11 +1,11 @@
 import React from 'react'
 import { ContactForm } from '../components/ContactForm'
-import { GoBackBtn } from '../components/GoBackBtn'
-
+ 
+import contact from "../css/ContactMe.module.css";
 export const ContactMe = () => {
   return (
-    <div>
-      <GoBackBtn></GoBackBtn>
+    <div className={contact.container}>
+      
       <ContactForm></ContactForm>
 
     </div>

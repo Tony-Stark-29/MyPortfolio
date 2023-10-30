@@ -1,0 +1,37 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.contact_container {
+  box-sizing: border-box;
+  min-height: 50vh;
+  background-color: rgba(64, 62, 62, 0.603);
+  box-shadow: 0 0 20px 1px #1b1b1b;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 200;
+}
+
+.contact_container .container_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_container .container_right {
+  padding: 20px;
+  background-color: #0c2e23;
+}
+
+.contact_container .contact_input {
+  min-height: 50px;
+  color: var(--PaleRobinEggBlue);
+  border: 2px solid var(--PaleRobinEggBlue);
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
