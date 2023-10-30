@@ -17,7 +17,7 @@ export const Navbar = () => {
   return (
     <header className="navigation-header">
       <nav className="navbar navbar-expand-md navbar-dark px-3">
-        <div className="navbar-brand logo">San</div>
+        <div className="navbar-brand logo" >San</div>
         <button className="navbar-toggler" type="button" data-bs-toggler="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={()=>{setCollapse(!navBarCollapse)}}>
     <span className="navbar-toggler-icon"></span>
   </button>

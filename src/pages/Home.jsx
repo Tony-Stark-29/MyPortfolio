@@ -1,11 +1,13 @@
 import React from "react";
 import home from "../css/Home.module.css";
+ 
 import linkedIn_logo from "../resources/icons/linked_in.svg";
 import gitHub_logo from "../resources/icons/github.svg";
 import resume_logo from "../resources/icons/user_circle_male_avatar.svg";
 import { Navbar } from "../components/Navbar";
 import { Link } from "react-router-dom";
-export const Home = () => {
+ export const Home = () => {
+ 
   return (
     < div className={home.container}>
       <Navbar></Navbar>
@@ -13,7 +15,7 @@ export const Home = () => {
       <div className={home.content}>
           <div className={`col-lg-12 ${home.container_left}`}>
             <div className=" ">
-              <h2 className="display-5">Santhosh Kumar</h2>
+              <h2 className={home.name}>Santhosh Kumar</h2>
               <h6>MCA Graduate</h6>
             </div>
             <div className={home.link_img_container}>

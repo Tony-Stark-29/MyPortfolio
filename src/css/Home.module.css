@@ -24,6 +24,11 @@
   width: 100vh;
 }
 
+.name{
+  font-family: Astro;
+  color:var(--PaleRobinEggBlue);
+}
+
 .link_img_container  img {
   margin: 1rem;
   width: 50px;
