@@ -97,6 +97,7 @@
   }
 
   .my-nav-link {
+    margin: 1rem;
     color: var(--PaleRobinEggBlue);
   }
 }
