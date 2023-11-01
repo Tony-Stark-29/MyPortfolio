@@ -1,0 +1,9 @@
+
+
+.container
+{
+    background:url("../resources/background/wallpaper-2.jpg") cover/center fixed;
+    min-height: 100vh;
+    widows: 100%;
+
+}

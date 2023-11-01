@@ -32,9 +32,21 @@
   font-family: Astro;
   src: url("./resources/fonts/astro-famil/astro.woff");
 }
+@font-face {
+  font-family: Quotes;
+  src: url("./resources/fonts/quotes/Quotes.woff");
+}
+@font-face {
+  font-family: Gabriela;
+  src: url("./resources/fonts/gabriela/gabriela.regular.woff");
+}
+@font-face {
+  font-family: GreatVibes;
+  src: url("./resources/fonts/gretaVibes/great-vibes.regular.woff");
+}
 
 .logo {
-  font-family: Astro;
+  font-family: Quotes;
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
   position: relative;
@@ -88,6 +100,8 @@
 }
 
 @media screen and (max-width: 992px) {
+
+  
   .navigation-header {
     background-color: #0c2e23;
   }

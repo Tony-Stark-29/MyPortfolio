@@ -29,18 +29,21 @@ export const Education = () => {
               <img src={SMVEC_LOGO} alt="SMVEC" />
               <h6>Sri Manakula Vinayagar Engineering College</h6>
             </div>
-            <div className="education-details ">
-              <div className="course-details">
+            <div className={education.education_details}>
+              <div className={education.course_details}>
                 <p>
                   <strong>Batch : </strong>2020 - 2022
                 </p>
                 <p>
                   <strong>Specialization : </strong>Computer Application
                 </p>
+                <p>
+                  <strong>Completed On :</strong> Nov 2022
+                </p>
               </div>
             </div>
-            <div className="course-outcome">
-              <div className="outcome-overlay">
+            <div className={education.course_outcome}>
+              <div className={education.outcome}>
                 <p>8.75</p>
                 <hr />
                 <p>10</p>
@@ -55,18 +58,21 @@ export const Education = () => {
               <img src={PUCC_LOGO} alt="SMVEC" />
               <h6>Pondicherry University Community College</h6>
             </div>
-            <div className="education-details ">
-              <div className="course-details">
+            <div className={education.education_details}>
+              <div className={education.course_details}>
                 <p>
                   <strong>Batch : </strong>2017 - 2020
                 </p>
                 <p>
                   <strong>Specialization : </strong>Computer Application
                 </p>
+                <p>
+                  <strong>Completed On :</strong> Sep 2020
+                </p>
               </div>
             </div>
-            <div className="course-outcome">
-              <div className="outcome-overlay">
+            <div className={education.course_outcome}>
+              <div className={education.outcome}>
                 <p>7.10</p>
                 <hr />
                 <p>10</p>

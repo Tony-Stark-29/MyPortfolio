@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   const [navBarCollapse,setCollapse]=useState('');
 
-  console.log(currPage);
+  // console.log(currPage);
  
  
   

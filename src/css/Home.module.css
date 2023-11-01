@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh auto;
+  grid-template-rows:10vh auto;
   box-sizing: border-box;
 }
 
@@ -25,7 +25,9 @@
 }
 
 .name{
-  font-family: Astro;
+  font-size: 5rem;
+  font-family: Quotes;
+  /* font-family: Astro; */
   color:var(--PaleRobinEggBlue);
 }
 
@@ -46,6 +48,7 @@
   border: 2px solid var(--PaleRobinEggBlue);
 }
 .container_right {
+
   box-sizing: border-box;
   padding: 0 3rem;
 }
@@ -55,6 +58,9 @@
   z-index: 10;
 }
 .container_right > p {
+ 
+  font-family: Gabriela;
+  font-weight: 100;
   font-size: 1.1rem;
   text-align: justify;
   line-height: 3em;
@@ -66,7 +72,7 @@
 
   .container
   {
-    grid-template-rows: 10vh auto;
+    grid-template-rows: max-content auto;
   }
   .content {
     display: flex;
@@ -89,6 +95,6 @@
 
   .name{
     color: var(--Bottle-Green);
-    font-size: 1.5rem;
+    font-size: 3.5rem;
   }
 }
