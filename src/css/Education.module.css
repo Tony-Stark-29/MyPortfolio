@@ -11,18 +11,20 @@
 
 .education_container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr ;
   grid-template-rows: 10% auto;
   justify-items: center;
   border-right: 2px solid var(--PaleRobinEggBlue);
 }
 
 .education {
-  width: 400px;
+  
+  min-width: 350px;
   height: 250px;
   max-height: 300px;
   display: grid;
   grid-template-columns: 1fr 10%;
+  gap: 1rem;
   border: 2px solid var(--PaleRobinEggBlue);
   background-color: var(--white);
   image-rendering: optimizeSpeed;
@@ -46,8 +48,8 @@
 }
 
 .education_title > img {
-  width: 110px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-color: #ffffff;
   padding: 0.8rem;
   border-radius: 50%;
@@ -88,14 +90,14 @@
   gap: 1rem;
   height: auto;
   margin: 1rem;
-  min-height: 30vh;
+  
 }
 
 .skill {
   padding: 1rem;
-  background-color: #0e261eda;
+  background-color: #0e261ec7;
   border-radius: 15px;
-  min-width: 50%;
+  
 }
 .skill > img {
   width: 70px;
@@ -129,6 +131,22 @@
 
   .education {
     margin: 1rem;
-    width: 80vw;
+  
+  }
+
+  .skills_container,.skills
+  {
+
+    display: flex;
+    flex-direction: column;
+    justify-self:center;
+    align-items: center;
+
+  }
+ 
+  .skill
+  {
+    width: 80%;
+    
   }
 }

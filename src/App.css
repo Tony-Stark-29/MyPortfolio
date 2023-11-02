@@ -15,6 +15,7 @@
   font-family: "Nunito", sans-serif;
   background: url("./resources/background/man-vector.png") center/cover fixed;
   scroll-behavior: smooth;
+  image-rendering: optimizeSpeed;
 }
 
 .App-logo {

@@ -11,6 +11,7 @@
   box-sizing: border-box;
   width: 70vw;
   min-height: 60vh;
+   
   background-color: rgba(64, 62, 62, 0.603);
   box-shadow: 0 0 20px 1px #1b1b1b;
    position: relative;
@@ -64,9 +65,12 @@
     .contact_container {
 
         width: 90vw;
+        min-height: 30vh;
     }
 
 
+  
+     
     .close
     {
         position: absolute;
